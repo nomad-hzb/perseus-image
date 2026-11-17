@@ -1,14 +1,24 @@
 services:
-  api_host: "localhost"
+  api_host: nomad-perseus.helmholtz-berlin.de
   api_port: 80
   api_base_path: "/backend"
-
+  https: true
+  
 oasis:
   is_oasis: true
   uses_central_user_management: true
 
 plugins:
   entry_points:
+    include: [
+      "perovskite_solar_cell_database.apps:solar_cells",
+      "nomad_tfsc_general.parsers:tfsc_general_parser",
+      "nomad_tfsc_general.parsers:tfsc_general_experiment_experiment_parser",
+      "nomad_tfsc_general.schema_packages:tfsc_general_package",
+      "nomad_tfsc_general.apps:tfsc_voila_documentation_app",
+      "nomad_tfsc_general.apps:tfsc_perseus_search_app",
+      "nomad_tfsc_general.apps:tfsc_perseus_layer_search_app",
+    ]
     options:
       nomad_north_jupyter.north_tools:jupyter:
         north_tool:
@@ -16,7 +26,7 @@ plugins:
 
 meta:
   deployment: "oasis"
-  maintainer_email: "me@my-oasis.org"
+  maintainer_email: "dimitra.gkogkou@helmholtz-berlin.de"
 
 logstash:
   enabled: false
@@ -29,6 +39,7 @@ mongo:
 
 elastic:
   entries_index: nomad_oasis_entries_v1
+  materials_index: nomad_oasis_materials_v1
 
 north:
   enabled: true
