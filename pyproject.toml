@@ -21,7 +21,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
 dependencies = [
-  "nomad-lab[infrastructure]==2.0.0",
+  "nomad-lab[infrastructure]==2.0.1",
 ]
 
 [project.urls]
@@ -31,7 +31,7 @@ repository = "https://github.com/nomad-hzb/perseus-image"
 # Add your plugins to the list below.
 plugins = [
   "nomad-north-jupyter>=0.2.6",
-  "nomad-gui==2.0.0",
+  "nomad-gui==2.0.1",
   "perovskite-solar-cell-database @ git+https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git",
   "nomad-baseclasses @ git+https://github.com/nomad-hzb/nomad-baseclasses.git",
   "nomad-tfsc-general @ git+https://github.com/nomad-hzb/nomad-tfsc-general.git",
