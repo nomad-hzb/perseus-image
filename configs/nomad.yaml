@@ -18,11 +18,16 @@ plugins:
       "nomad_tfsc_general.apps:tfsc_voila_documentation_app",
       "nomad_tfsc_general.apps:tfsc_perseus_search_app",
       "nomad_tfsc_general.apps:tfsc_perseus_layer_search_app",
+      "nomad_north_jupyter.north_tools:jupyter",
+      "nomad_north_voila.north_tools:voila",
     ]
     options:
       nomad_north_jupyter.north_tools:jupyter:
         north_tool:
           image: ghcr.io/nomad-hzb/perseus-image/jupyter:main
+      nomad_north_voila.north_tools:voila:
+        north_tool:
+          image: ghcr.io/nomad-hzb/hzb-se-image-2/jupyter:main
 
 meta:
   deployment: "oasis"
