@@ -4746,6 +4746,7 @@ plugins = [
     { name = "nomad-baseclasses" },
     { name = "nomad-gui" },
     { name = "nomad-north-jupyter" },
+    { name = "nomad-north-voila" },
     { name = "nomad-tfsc-general" },
     { name = "perovskite-solar-cell-database" },
 ]
@@ -4771,6 +4772,7 @@ requires-dist = [
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.1" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = "==2.0.1" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.6" },
+    { name = "nomad-north-voila", marker = "extra == 'plugins'", specifier = ">=0.1.15" },
     { name = "nomad-tfsc-general", marker = "extra == 'plugins'", git = "https://github.com/nomad-hzb/nomad-tfsc-general.git" },
     { name = "perovskite-solar-cell-database", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git" },
     { name = "pyvis", marker = "extra == 'jupyter'" },
@@ -4914,6 +4916,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/19/97/4dc44543907bd9a1259b5daf33c02409180c81090bf84b7bde227c84a213/nomad_north_jupyter-0.2.6.tar.gz", hash = "sha256:9f3fb5668c19ba9225cd6dd5c3f353083c2fdf44c08f8f54b654b77c35e8dc61", size = 114640, upload-time = "2026-06-29T15:24:46.314Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/01/96/43675168cf18b66884b71c49111d81f8677f4f8e459ce99d12dcc5451a1b/nomad_north_jupyter-0.2.6-py3-none-any.whl", hash = "sha256:c4b708e2c7032792b7e363aaab308c89512f561accd3c90745b93096a4b14b77", size = 14526, upload-time = "2026-06-29T15:24:44.966Z" },
+]
+
+[[package]]
+name = "nomad-north-voila"
+version = "0.1.15"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "nomad-lab" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f2/f2/e56efbc58b62d9329d5fb25c09136ba2f9b195e2a039a05a912373b767ce/nomad_north_voila-0.1.15.tar.gz", hash = "sha256:10fe130d5fdaed84466d2eb3c9dc3e2bdbc60e4b12ef6e9e92a1eadcfafdc189", size = 117802, upload-time = "2026-06-29T15:24:41.278Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/65/a8/4e130ee35f2ed97940babe9bd3b6c8f65f0cf19a7949ee55997d57a16d31/nomad_north_voila-0.1.15-py3-none-any.whl", hash = "sha256:cac4bbc5a34522f821653ed4e848b3dcf081d8d5b963684ff5923449a66b0282", size = 18272, upload-time = "2026-06-29T15:24:39.887Z" },
 ]
 
 [[package]]
