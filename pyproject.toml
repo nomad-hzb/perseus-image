@@ -32,12 +32,34 @@ repository = "https://github.com/nomad-hzb/perseus-image"
 plugins = [
   "nomad-north-jupyter>=0.2.6",
   "nomad-gui==2.0.0",
+  "perovskite-solar-cell-database @ git+https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git",
+  "nomad-baseclasses @ git+https://github.com/nomad-hzb/nomad-baseclasses.git",
+  "nomad-tfsc-general @ git+https://github.com/nomad-hzb/nomad-tfsc-general.git",
 ]
-jupyter = ["jupyter-events"]
+jupyter = [
+'voila',
+'ipyaggrid',
+'ipyvuetify',
+'ipysheet',
+'ipydatagrid',
+'jupyter-flex',
+'ipympl',
+'electrokitty',
+#'baybe',
+'ipython<9',
+'ipykernel<7',
+'pyvis',
+'lmfit',
+'jupyterlab_h5web',
+'jupyterlab>4.0',
+'seaborn',
+'jupyter-events',
+'jupyterlab-spreadsheet-editor'
+]
 gpu-action = []
 cpu-action = []
 
-dev = ["nomad-lab[infrastructure, dev]==2.0.0"]
+dev = ["nomad-lab[infrastructure, dev]==2.0.1"]
 
 [tool.uv]
 extra-index-url = [
