@@ -27,7 +27,7 @@ plugins:
           image: ghcr.io/nomad-hzb/perseus-image/jupyter:main
       nomad_north_voila.north_tools:voila:
         north_tool:
-          image: ghcr.io/nomad-hzb/hzb-se-image-2/jupyter:main
+          image: ghcr.io/nomad-hzb/perseus-image/jupyter:main
 
 meta:
   deployment: "oasis"
