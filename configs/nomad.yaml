@@ -2,6 +2,7 @@ services:
   api_host: nomad-perseus.helmholtz-berlin.de
   api_port: 80
   api_base_path: "/backend"
+  upload_limit: 1000
   https: true
   
 oasis:
